@@ -115,3 +115,6 @@ MANIFEST-*
 #3rdparty2012
 
 #Inceptionism
+
+# boost directory
+boost/*
