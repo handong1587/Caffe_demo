@@ -60,3 +60,5 @@ Caffe_demo
 [http://sourceforge.net/projects/openblas/files/](http://sourceforge.net/projects/openblas/files/)
 
 # opencv-2.4.10
+
+[opencv.org/downloads.html](opencv.org/downloads.html)

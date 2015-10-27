@@ -117,4 +117,4 @@ MANIFEST-*
 #Inceptionism
 
 # boost directory
-boost/*
+3rdparty/include/boost/*
