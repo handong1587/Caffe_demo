@@ -3,47 +3,47 @@ A Caffe Windows program for demonstration purpose only.
 
 Build platform: Windows X86. Visual Studio 2015.
 
-Directory struture:
+Directory structure:
 
-Caffe_demo
-├── 3rdparty
-│   ├── include
-│   │    ├── boost
-│   │    ├── gflags
-│   │    ├── glog
-│   │    ├── google
-│   │    ├── OpenBLAS
-│   │    │   └── include
-│   │    ├── opencv
-│   │    └── opencv2
-│   └── lib
-│        ├── gflags.lib                   built by VS2015
-│        ├── gflags_nothreads.lib        built by VS2015
-│        ├── libboost_chrono-vc140-mt-1_57.lib
-│        ├── libboost_date_time-vc140-mt-1_57.lib
-│        ├── libboost_system-vc140-mt-1_57.lib
-│        ├── libboost_thread-vc140-mt-1_57.lib
-│        ├── libglog.lib
-│        ├── libopenblas.dll.a            come from official "OpenBLAS-v0.2.14-Win32.zip"
-│        ├── libprotobuf.lib              built by VS2015
-│        ├── opencv_core2410.lib         come from official "opencv-2.4.10.exe"
-│        ├── opencv_highgui2410.lib      come from official "opencv-2.4.10.exe"
-│        └── opencv_imgproc2410.lib      come from official "opencv-2.4.10.exe"
-├── caffe
-│   ├── include
-│   ├── python
-│   └── src
-├── Caffe_demo
-│   ├── Caffe_demo.vcxproj
-│   ├── Caffe_demo.vcxproj.filters
-│   ├── caffe_test.cpp
-│   ├── libglog.dll                   built by VS2015
-│   ├── libopenblas.dll               come from official "OpenBLAS-v0.2.14-Win32.zip"
-│   ├── libprotobuf.dll               built by VS2015
-│   ├── opencv_core2410.dll          come from official "opencv-2.4.10.exe"
-│   ├── opencv_highgui2410.dll       come from official "opencv-2.4.10.exe"
-│   └── opencv_imgproc2410.dll       come from official "opencv-2.4.10.exe"
-└── Caffe_demo.sln
+Caffe_demo  <br />
+├── 3rdparty  <br />
+│   ├── include  <br />
+│   │    ├── boost  <br />
+│   │    ├── gflags  <br />
+│   │    ├── glog  <br />
+│   │    ├── google  <br />
+│   │    ├── OpenBLAS  <br />
+│   │    │   └── include  <br />
+│   │    ├── opencv  <br />
+│   │    └── opencv2  <br />
+│   └── lib  <br />
+│        ├── gflags.lib                   built by VS2015  <br />
+│        ├── gflags_nothreads.lib        built by VS2015  <br />
+│        ├── libboost_chrono-vc140-mt-1_57.lib  <br />
+│        ├── libboost_date_time-vc140-mt-1_57.lib  <br />
+│        ├── libboost_system-vc140-mt-1_57.lib  <br />
+│        ├── libboost_thread-vc140-mt-1_57.lib  <br />
+│        ├── libglog.lib  <br />
+│        ├── libopenblas.dll.a            come from official "OpenBLAS-v0.2.14-Win32.zip"  <br />
+│        ├── libprotobuf.lib              built by VS2015  <br />
+│        ├── opencv_core2410.lib         come from official "opencv-2.4.10.exe"  <br />
+│        ├── opencv_highgui2410.lib      come from official "opencv-2.4.10.exe"  <br />
+│        └── opencv_imgproc2410.lib      come from official "opencv-2.4.10.exe"  <br />
+├── caffe  <br />
+│   ├── include  <br />
+│   ├── python  <br />
+│   └── src  <br />
+├── Caffe_demo  <br />
+│   ├── Caffe_demo.vcxproj  <br />
+│   ├── Caffe_demo.vcxproj.filters  <br />
+│   ├── caffe_test.cpp  <br />
+│   ├── libglog.dll                   built by VS2015  <br />
+│   ├── libopenblas.dll               come from official "OpenBLAS-v0.2.14-Win32.zip"  <br />
+│   ├── libprotobuf.dll               built by VS2015  <br />
+│   ├── opencv_core2410.dll          come from official "opencv-2.4.10.exe"  <br />
+│   ├── opencv_highgui2410.dll       come from official "opencv-2.4.10.exe"  <br />
+│   └── opencv_imgproc2410.dll       come from official "opencv-2.4.10.exe"  <br />
+└── Caffe_demo.sln  <br />
 
 3rd-party dependencies:
 
