@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="caffe">
+      <UniqueIdentifier>{fbdfd751-febe-44a9-9280-57374cd4926a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\src">
+      <UniqueIdentifier>{a0868959-7d20-4b12-afa4-fc652b946729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\src\layers">
+      <UniqueIdentifier>{4be046fc-e21f-4fe4-8900-2d1f28ec1481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\src\util">
+      <UniqueIdentifier>{5ba6e6f1-52c6-46d8-afdd-b921d469a3c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\src\proto">
+      <UniqueIdentifier>{5e64b57b-93a0-4fb3-93f8-ecf1515c7a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\include">
+      <UniqueIdentifier>{ddf6e6f8-8a74-4c0e-b16d-666692b3d519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\include\util">
+      <UniqueIdentifier>{4a3bdbfe-2c8a-4adb-82ac-7592df08ce31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="caffe\include\proto">
+      <UniqueIdentifier>{43d29311-58d3-40d9-8f91-debf918f4392}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\caffe\src\caffe\layers\absval_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\accuracy_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\base_conv_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\bnll_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\concat_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\conv_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\deconv_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\dropout_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\eltwise_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\embed_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\exp_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\filter_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\flatten_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\im2col_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\inner_product_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\log_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\lrn_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\mvn_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\neuron_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\pooling_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\power_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\prelu_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\reduction_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\relu_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\reshape_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\roi_pooling_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\sigmoid_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\silence_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\slice_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\softmax_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\split_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\spp_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\tanh_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\threshold_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\tile_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\argmax_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_conv_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_pooling_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_relu_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_sigmoid_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_softmax_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_tanh_layer.cpp">
+      <Filter>caffe\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\im2col.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\insert_splits.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\io.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\math_functions.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\upgrade_proto.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\blob.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\common.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layer.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\layer_factory.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\net.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\solver.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\syncedmem.cpp">
+      <Filter>caffe\src</Filter>
+    </ClCompile>
+    <ClCompile Include="caffe_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\proto\caffe.pb.cc">
+      <Filter>caffe\src\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="..\caffe\src\caffe\util\mkstemp.cpp">
+      <Filter>caffe\src\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\caffe\src\caffe\proto\caffe.proto">
+      <Filter>caffe\src\proto</Filter>
+    </None>
+    <None Include="..\caffe\include\caffe\util\gpu_util.cuh">
+      <Filter>caffe\include\util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\caffe\include\caffe\blob.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\caffe.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\common.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\common_layers.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\fast_rcnn_layers.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\filler.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\internal_thread.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\layer.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\layer_factory.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\net.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\neuron_layers.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\python_layer.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\solver.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\syncedmem.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\vision_layers.hpp">
+      <Filter>caffe\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\benchmark.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\blocking_queue.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\cudnn.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\db.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\db_leveldb.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\db_lmdb.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\device_alternate.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\hdf5.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\im2col.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\insert_splits.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\io.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\math_functions.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\mkl_alternate.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\rng.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\signal_handler.h">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\util\upgrade_proto.hpp">
+      <Filter>caffe\include\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\caffe\include\caffe\proto\caffe.pb.h">
+      <Filter>caffe\include\proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

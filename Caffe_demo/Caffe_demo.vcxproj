@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13A686B9-511B-4DAD-893C-57929D73B9C9}</ProjectGuid>
+    <RootNamespace>Caffe_demo</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\caffe\include;..\3rdparty\include;..\3rdparty\include\OpenBLAS\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CPU_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3rdparty\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libglog.lib;libprotobuf.lib;gflags.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _CRT_NONSTDC_NO_DEPRECATE %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\caffe\include;..\3rdparty\include;..\3rdparty\include\OpenBLAS\include;..\3rdparty\include\opencv;..\3rdparty\include\opencv2</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;CPU_ONLY;PROTOBUF_USE_DLLS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libglog.lib;libprotobuf.lib;gflags.lib;opencv_core2410.lib;opencv_imgproc2410.lib;opencv_highgui2410.lib;libopenblas.dll.a;shlwapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\3rdparty\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\caffe\src\caffe\blob.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\common.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\absval_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\accuracy_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\argmax_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\base_conv_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\bnll_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\concat_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\conv_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_conv_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_pooling_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_relu_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_sigmoid_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_softmax_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\cudnn_tanh_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\deconv_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\dropout_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\eltwise_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\embed_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\exp_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\filter_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\flatten_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\im2col_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\inner_product_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\log_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\lrn_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\mvn_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\neuron_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\pooling_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\power_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\prelu_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\reduction_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\relu_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\reshape_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\roi_pooling_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\sigmoid_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\silence_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\slice_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\softmax_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\split_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\spp_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\tanh_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\threshold_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layers\tile_layer.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\layer_factory.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\net.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\proto\caffe.pb.cc" />
+    <ClCompile Include="..\caffe\src\caffe\solver.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\syncedmem.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\im2col.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\insert_splits.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\io.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\math_functions.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\mkstemp.cpp" />
+    <ClCompile Include="..\caffe\src\caffe\util\upgrade_proto.cpp" />
+    <ClCompile Include="caffe_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\caffe\include\caffe\util\gpu_util.cuh" />
+    <None Include="..\caffe\src\caffe\proto\caffe.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\caffe\include\caffe\blob.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\caffe.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\common.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\common_layers.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\fast_rcnn_layers.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\filler.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\internal_thread.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\layer.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\layer_factory.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\net.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\neuron_layers.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\proto\caffe.pb.h" />
+    <ClInclude Include="..\caffe\include\caffe\python_layer.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\solver.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\syncedmem.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\benchmark.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\blocking_queue.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\cudnn.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\db.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\db_leveldb.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\db_lmdb.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\device_alternate.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\hdf5.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\im2col.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\insert_splits.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\io.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\math_functions.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\mkl_alternate.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\rng.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\util\signal_handler.h" />
+    <ClInclude Include="..\caffe\include\caffe\util\upgrade_proto.hpp" />
+    <ClInclude Include="..\caffe\include\caffe\vision_layers.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
