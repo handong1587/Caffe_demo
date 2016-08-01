@@ -20,7 +20,7 @@ int main()
 {
 	string prototxt = "D:\\Git\\caffe\\models\\bvlc_reference_caffenet\\test.prototxt";
 	string model = "D:\\Git\\fast-rcnn\\data\\imagenet_models\\CaffeNet.v2.caffemodel";
-    string synset_words = "D:\\Git\\caffe\\data\\ilsvrc12\\caffe_ilsvrc12.tar\\synset_words.txt";
+	string synset_words = "D:\\Git\\caffe\\data\\ilsvrc12\\caffe_ilsvrc12.tar\\synset_words.txt";
 	string img = "n02123597_10086_Siamese_cat.JPEG";
 
 	Caffe::set_mode(Caffe::CPU);
@@ -28,8 +28,8 @@ int main()
 	caffe_net.CopyTrainedLayersFrom(model);
 	vector<Blob<float>*> input_blobs = caffe_net.input_blobs();
 
-    // read synset_words
-    vector<string> all_synset_words = readSynsetWords(synset_words);
+	// read synset_words
+	vector<string> all_synset_words = readSynsetWords(synset_words);
 
 	int resize_length = 256;
 	//int crop_length = 224;
@@ -58,8 +58,8 @@ int main()
 		}
 	}
 	const vector<Blob<float>*> dt_result = caffe_net.Forward(input_blobs);
-    float max_score = -1.0;
-    int max_index = -1;
+	float max_score = -1.0;
+	int max_index = -1;
 	for (int i = 0; i<dt_result[0]->count(); i++)
 	{
 		cout << i << ":" << dt_result[0]->cpu_data()[i] << endl;
@@ -69,9 +69,9 @@ int main()
             max_index = i;
         }
 	}
-    cout << "max index: " << max_index << endl;
-    cout << "max score: " << max_score << endl;
-    cout << "recoginiton: " << all_synset_words[max_index] << endl;
+	cout << "max index: " << max_index << endl;
+	cout << "max score: " << max_score << endl;
+	cout << "recoginiton: " << all_synset_words[max_index] << endl;
 	return 0;
 }
 
